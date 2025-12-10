@@ -1,0 +1,146 @@
+:root{
+    --rosa: #f4b0ca;
+    --rosa-claro: #fbc5df;
+    --verde-oliva: #8a9a5b;
+    --verde-escuro: #626d38;
+    --texto: #333;
+    --fundo: #f6d7e5;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+}
+
+header {
+    background: var(--rosa);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--verde-oliva);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav a, nav button {
+    background: var(--verde-oliva);
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    padding: 20px;
+}
+
+.grid-dupla {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-projetos {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-projetos, .grid-desenhos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.card {
+    background: var(--card-bg, #ffffff20);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;  
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.btn {
+    background: var(--verde-oliva);
+    color: white;
+    padding: 10px 18px;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    border-radius: 12%;
+    object-fit: cover;
+    border: 3px solid var(--verde-oliva);
+}
+
+.grid-dupla-f {
+    background: var(--verde-escuro);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    align-items: center;
+    color: white;
+}
+
+.grid-dupla-f aside {
+    text-align: right;
+}
+
+.contatos h3 {
+    margin: 0 0 10px 0;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contatos a {
+    display: inline-block;
+}
+
+.contatos i {
+    font-size: 26px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.contatos i:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.dark {
+    --fundo: #333;
+    --texto: #fff;
+    --rosa: #480764;
+    --rosa-claro: #8a9a5b;
+    --verde-oliva: #ad45b0;
+    --verde-escuro: #480764;
+}
